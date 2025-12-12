@@ -142,7 +142,7 @@
   {
     "question": "Update the system using administrative privileges.",
     "choices": [
-      "sudo apt update && sudo apt upgrade",
+      "sudo apt update",
       "update system now",
       "sys upgrade full",
       "apt upgrade all"
@@ -182,7 +182,7 @@
   {
     "question": "Display only the last 10 commands from your command history.",
     "choices": [
-      "history | tail -10",
+      "history 10",
       "lastcmd -10",
       "history -last 10",
       "cmdhist 10"
@@ -352,7 +352,7 @@
   {
     "question": "View a large file bigfile.txt one page at a time.",
     "choices": [
-      "less bigfile.txt",
+      "more bigfile.txt",
       "view bigfile.txt",
       "open bigfile.txt --page",
       "scroll bigfile.txt"
