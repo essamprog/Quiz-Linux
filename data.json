@@ -472,7 +472,7 @@
   {
     "question": "Copy all .txt files to the backup directory.",
     "choices": [
-      "cp *.txt Books",
+      "cp *.txt backupس",
       "copy *.txt backup",
       "move *.txt backup",
       "cp txt backup"
@@ -710,3 +710,4 @@
     "answer": 0
   }
 ]
+
