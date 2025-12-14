@@ -1,0 +1,143 @@
+1. Display all files, including hidden ones, in long listing format.  
+ls -la 
+2. Show your current working directory.  
+pwd 
+3. Change your directory to /home/student/Documents using an absolute path.  
+cd /home/student/Documents 
+4. Move from the current directory to its parent directory.  
+cd .. 
+5. Navigate to your home directory using a shortcut.  
+cd ~ 
+6. Display files in reverse alphabetical order.  
+ls -r 
+7. Combine multiple options to display a long listing sorted in reverse.  
+ls -lr 
+8. Change directory to the root / directory.  
+cd / 
+9. Change directory to a folder named projects using a relative path.  
+cd projects 
+10. You are currently inside /home/student/Documents/Projects /School/Work. 
+Using a relative path, navigate to the directory /home/student/Documents/Art.  
+cd ../../../Art 
+11. List all files in /Documents/Books sorted by timestamp and in details.  
+ls -lt /Documents/Books 
+12. List all hidden files in the current directory.  
+ls -a 
+13. List files in reverse timestamp order and in details.  
+ls -lrt 
+14. Attempt to enter the /root directory (What is your expected output & why?). 
+cd /root  
+15. Update the system using administrative privileges.  
+sudo apt update 
+16. Switch to the root user.  
+sudo su 
+17. Exit the root shell.  
+exit 
+18. Write a command that contains a comment.  
+ls -l  #This is a Comment 
+19. Display only the last 10 commands from your command history.  
+history 10 
+20. Clear your entire command history.  
+history -c 
+21. Create a new file called do.txt.  
+touch do.txt 
+22. Display the permissions of do.txt.  
+ls -l do.txt 
+23. Add write permission for others on do.txt.  
+chmod o+w do.txt 
+24. Remove write permission from the group for do.txt.  
+chmod g-w do.txt 
+25. Add write permission for both group and others on do.txt.  
+chmod g+w,o+w do.txt 
+26. Give the owner all permissions using octal notation.  
+chmod 700 do.txt 
+27. Give user, group, and others full permissions using octal notation.  
+chmod 777 do.txt 
+28. Change the owner of do.txt to root.  
+sudo chown root do.txt 
+29. Change the group owner of do.txt to a group named staff.  
+sudo chgrp staff do.txt 
+30. Change both owner and group of do.txt to master:team.  
+sudo chown master:team do.txt 
+31. Change the owner and group of multiple files (file1, file2) at once.  
+sudo chown master:team file1 file2 
+32. Create a new file FileNew.txt with the text 'Welcome to Linux'.  
+echo "Welcome to Linux" > FileNew.txt 
+33. Display the entire content of FileNew.txt.  
+cat FileNew.txt 
+34. Show the first 7 lines of report.txt.  
+head -n 7 report.txt 
+35. Show the last 5 lines of log.txt.  
+tail -n 5 log.txt 
+36. View a large file bigfile.txt one page at a time.  
+more bigfile.txt 
+37. Append the text 'Hello again' to output.txt.  
+echo "Hello again" >> output.txt 
+38. Overwrite the content of output.txt with 'New content'.  
+echo "New content" > output.txt 
+39. Use echo with -e to print two lines using \n.  
+echo -e "Line1\nLine2" 
+40. Display all system information.  
+uname -a 
+41. Display the kernel name.  
+uname -s 
+42. Display the hostname.  
+hostname 
+43. Display the machine hardware name.  
+uname -m 
+44. Copy sara.txt to the Music directory.  
+cp sara.txt Music 
+45. Copy Sfile.txt and Dfile.txt to the Desktop directory.  
+cp Sfile.txt Dfile.txt Desktop 
+46. Copy Sfile.txt from Documents to Music with the new name Dfile.txt.  
+cp Documents/Sfile.txt Music/Dfile.txt 
+47. Copy the entire Desk_folder to Downloads.  
+cp -r Desk_folder Downloads 
+48. Copy all .txt files to the backup directory.  
+cp *.txt Books 
+49. Move Sfile.txt to the Music directory.  
+mv Sfile.txt Music 
+50. Rename Dfile.txt to Mor.txt while moving it to Music.  
+mv Dfile.txt Music/Mor.txt 
+51. Move Desk_folder to Music.  
+mv Desk_folder Music 
+52. Move files b.txt and c.txt to Videos.  
+mv b.txt c.txt Videos 
+53. Delete old.txt.  
+rm old.txt 
+54. Delete the pubfold directory with all its contents.  
+rm -r pubfold 
+55. Create a new directory workspace.  
+mkdir -p workspace/projects 
+56. Search for the word 'command' in notes.txt.  
+grep command notes.txt 
+57. Search for the word 'unix' ignoring case.  
+grep -i unix notes.txt 
+58. Display only the count of lines that contain 'Linux'.  
+grep -c Linux notes.txt 
+59. Display lines that do not contain the word 'error'.  
+grep -v error notes.txt 
+60. Search for the whole word 'system'.  
+grep -w system notes.txt 
+61. Display only the matched pattern 'user' from info.txt.  
+grep -o user info.txt 
+62. Show line numbers for matches of 'root'.  
+grep -n root notes.txt 
+63. Find lines starting with A.  
+grep ^A notes.txt 
+64. Find lines ending with .log.  
+grep .log$ notes.txt 
+65. Search for any digit in profile.txt.  
+grep [0-9] profile.txt 
+66. Display hidden files and directories in a tree view.  
+tree -a 
+67. Display a tree view with file sizes.  
+tree -s 
+68. Display the last 10 executed commands.  
+history 10 
+69. Clear all command history.  
+history -c 
+70. Display the current date and time.  
+date 
+71. Show the calendar for February 2025.  
+cal 2 2025
